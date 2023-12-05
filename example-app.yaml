@@ -1,0 +1,19 @@
+...
+name: example-app
+region: nyc
+features:
+    - buildpack-stack=ubuntu-18
+services:
+- build_command: npm run build
+  environment_slug: node-js
+  github:
+    branch: master
+    deploy_on_push: true
+    repo: example/app-repo
+  http_port: 8080
+  instance_count: 2
+  instance_size_slug: professional-xs
+  name: reactions
+  run_command: npm start
+  source_dir: / 
+ 
