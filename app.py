@@ -196,7 +196,7 @@ def process():
         df.to_csv('static/FinalOutput.csv', index=False)
         return render_template('download.html')
 if __name__ == "__main__":
-    app.run(debug=True, port=8000)
+    app.run()
 
 
 # add filteration in assignedby
