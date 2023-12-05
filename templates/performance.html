@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <title>Tasks Todos</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body class="p-3 m-0 border-0 bd-example m-0 border-0">
+
+    <!-- Example Code -->
+    
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/">Home</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/assigned">Assigned Tasks</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/complete">Completed Tasks</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/future">Future Tasks</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                More Details
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="/performance">performance</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="role">Role Details</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+ 
+    <div class="mb-4"></div>
+    <p class="fs-5">Company Name : Pristyn Care</p>
+    <div class="mb-4"></div>
+    <p class="fs-5">Employee : Deepak Tyagi</p>
+    <div class="mb-4"></div>
+    <p class="fs-5">Designation : Senior MIS - (Sr Management System Analyst)</p>
+    <div class="mb-4"></div>
+    <p class="fs-5">Joinning Date : 19-September-2021</p>
+    <div class="mb-4"></div>
+    <p class="fs-5">Rating 10/10</p>
+    <!-- End Example Code -->
+
+
+
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Star Rating</title>
+        <style>
+            .rating {
+                display: flex;
+                flex-direction: row-reverse;
+                justify-content: space-between;
+                font-size: 24px;
+            }
+    
+            .rating input {
+                display: none;
+            }
+    
+            .rating label {
+                cursor: pointer;
+                color: #f8d64e;
+            }
+    
+            .rating label:before {
+                content: '\2605'; /* Unicode character for a star */
+            }
+    
+            .rating input:checked ~ label {
+                color: #f8d64e; /* Color for the selected stars */
+            }
+        </style>
+
+    
+    <div class="rating">
+
+        <input type="radio" id="star5" name="rating" value="10">
+        <label for="star5"></label>
+        <input type="radio" id="star5" name="rating" value="9">
+        <label for="star5"></label>
+        <input type="radio" id="star5" name="rating" value="8">
+        <label for="star5"></label>
+        <input type="radio" id="star5" name="rating" value="7">
+        <label for="star5"></label>
+        <input type="radio" id="star5" name="rating" value="6">
+        <label for="star5"></label>
+        <input type="radio" id="star4" name="rating" value="4">
+        <label for="star4"></label>
+        <input type="radio" id="star3" name="rating" value="3">
+        <label for="star3"></label>
+        <input type="radio" id="star2" name="rating" value="2">
+        <label for="star2"></label>
+        <input type="radio" id="star1" name="rating" value="1">
+        <label for="star1"></label>
+    </div>
+  
+
+
+</body>
+</html>
